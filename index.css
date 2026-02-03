@@ -72,6 +72,7 @@ html {
 .hero{
     min-height: 86vh;
     display: flex;
+    position: relative;
 }
 .heroLeftText{
     width: 50%;
@@ -83,7 +84,7 @@ html {
     justify-content: center;
     align-items: center;
     padding:0px 80px;
-    position: relative;
+    
     
 }
 .heroLeftText h1{
@@ -96,7 +97,7 @@ html {
     position: absolute;
     left: 15px;
     gap: 5px;
-    top: 40%;
+    top: 36%;
     display: flex;
     flex-direction: column;
     color: darkturquoise;
@@ -119,12 +120,52 @@ html {
 }
 @media  only screen and (min-width:300px) and (max-width:600px){
     .hero{
-    min-height: 86vh;
+    min-height: 80vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
+    .heroLeftText{
+        width: 100%;
+        height: unset;
+        padding:0px 40px 0px 50px;
+        margin-bottom: 30px;
 }
-
+.heroLeftText h1{
+    font-size: 40px;
+}
+.heroLeftText p{
+    font-size: 14px;
+}
+    .hero-right-img{
+        width: 100%;
+        height: unset;
+    }
+    .hero-right-img img{
+    width: 200px;
+    height: 200px;
+    }
+}
+@media  only screen and (min-width:600px) and (max-width:800px){
+    .hero-right-img img{
+    width: 300px;
+    height: 300px;
+    }
+        .heroLeftText{
+        width: 100%;
+        height:unset;
+        padding:0px 50px 0px 80px;
+}
+    .heroLeftText h1{
+    font-size: 40px;
+}
+.heroLeftText p{
+    font-size: 16px;
+}
+.hero-right-img{
+        
+        height: unset;
+    }
+}
 /* --------------------------about--------------------------- */
 .aboutContainer{
     min-height: 100vh;
