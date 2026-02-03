@@ -22,6 +22,11 @@ html {
     color: darkturquoise;
     padding-left: 80px;
     padding-right: 30px;
+    /* overflow-x: hidden; */
+}
+.navbar i{
+    display: none;
+    padding: 20px;
 }
 .SubNav{
     display: flex;
@@ -32,11 +37,36 @@ html {
 }
 .SubNav h3{
     border-bottom: none;
+    display: inline-block;
 }
 .SubNav h3:hover{
 
     border-bottom: 3px dotted gray;
 }
+
+@media  only screen and (min-width:300px) and (max-width:600px){
+
+    .navbar{
+        padding-left: 30px;
+        /* position: relative; */
+        
+    }
+    .navbar i{
+        display:inline-block;
+    }
+    .SubNav{
+        position: fixed;
+        flex-direction: column;
+        padding-top: 10px;
+        gap: 20px;
+        top: 60px;
+        right: -50%;
+        transition: all 1s;
+    }
+
+
+}
+
 
 /* ------------------------hero---------------------------------------- */
 .hero{
@@ -86,6 +116,13 @@ html {
     width: 400px;
     height: 400px;
     border-radius: 50%;
+}
+@media  only screen and (min-width:300px) and (max-width:600px){
+    .hero{
+    min-height: 86vh;
+    display: flex;
+    flex-direction: column;
+}
 }
 
 /* --------------------------about--------------------------- */
