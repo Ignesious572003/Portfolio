@@ -118,16 +118,24 @@ html {
     height: 400px;
     border-radius: 50%;
 }
+.hiddenImg{
+        visibility: hidden;
+    }
+.hiddenImg img{
+        width: 200px;
+        height: 200px;
+        display: none;
+    }
 @media  only screen and (min-width:300px) and (max-width:600px){
     .hero{
     min-height: 80vh;
     display: flex;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
 }
     .heroLeftText{
         width: 100%;
         height: unset;
-        padding:0px 40px 0px 50px;
+        /* padding:0px 40px 0px 60px; */
         margin-bottom: 30px;
 }
 .heroLeftText h1{
@@ -138,12 +146,22 @@ html {
 }
     .hero-right-img{
         width: 100%;
-        height: unset;
+        height: 0%;
+        visibility: hidden;
     }
     .hero-right-img img{
     width: 200px;
     height: 200px;
+    visibility: hidden;
     }
+    .hiddenImg{
+        visibility: unset;
+    }
+    .hiddenImg img{
+        display: inline-block;
+        border-radius: 50%;
+    }
+    
 }
 @media  only screen and (min-width:600px) and (max-width:800px){
     .hero-right-img img{
