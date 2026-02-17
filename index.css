@@ -322,6 +322,10 @@ html {
     width: 200px;
     height: 200px;
     }
+    .imgcover{
+        width: 250px;
+    height: 250px;
+    }
 }
 @media  only screen and (min-width:600px) and (max-width:800px){
     .hero-right-img img{
