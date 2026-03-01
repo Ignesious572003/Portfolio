@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 html {
@@ -93,6 +93,10 @@ html {
 }
 
 
+
+
+
+
 /* ------------------------hero---------------------------------------- */
 .hero{
     min-height: 88vh;
@@ -136,8 +140,7 @@ html {
     /* width: 100%; */
 }
 .h1tag .top{
-    font-size: 50px;
-    
+    font-size: 50px;  
 }
 .h1tag .top .type1{
     font-size: 50px;
@@ -221,6 +224,9 @@ html {
     position: relative;
     
 }
+/* .hero-right-img-hidden{
+    display: block;
+} */
 @keyframes photo{
     from{
         filter: blur(5px) saturate(1) contrast(1) brightness(0.1);
@@ -244,8 +250,8 @@ html {
 }
 
 .imgcover{
-    width: 450px;
-    height: 450px;
+    width: 420px;
+    height: 420px;
     border-radius: 50%;
     border: 1px double burlywood;
     position: absolute;
@@ -261,7 +267,7 @@ html {
     position: relative;
     background-color: crimson;
 } */
-.imgcover::after{
+/* .imgcover::after{
     content: ".";
     width: 20px;
     height: 20px;
@@ -272,7 +278,7 @@ html {
     position: relative;
     background-color: crimson;
     color: white;
-}
+} */
 @keyframes spin{
     0%{
         transform: rotate(0deg);
@@ -308,7 +314,13 @@ html {
         padding:0px 40px 0px 50px;
         margin-bottom: 30px;
 }
-.heroLeftText h1{
+.h1tag .top{
+    font-size: 40px;  
+}
+.h1tag .bottom{
+    font-size: 40px;
+}
+.h1tag .top .type1{
     font-size: 40px;
 }
 .heroLeftText p{
@@ -323,8 +335,8 @@ html {
     height: 200px;
     }
     .imgcover{
-        width: 250px;
-    height: 250px;
+        width: 220px;
+    height: 220px;
     }
 }
 @media  only screen and (min-width:600px) and (max-width:800px){
@@ -375,6 +387,7 @@ html {
     color: darkturquoise;
     /* background-color: burlywood; */
     margin-bottom: 20px;
+    font-size: 40px;
 }
 .about{
     display: flex;
@@ -394,7 +407,7 @@ html {
 .namecontainer h1{
      color: transparent;
     -webkit-text-stroke: 0.5px darkturquoise;
-    font-size: 50px;
+    font-size: 60px;
     
 }
 .namecontainer p{
@@ -448,13 +461,29 @@ letter-spacing: 2px;
     height: 200px;
     position: relative;
 }
-.aboutimg-image::before{
+.aboutimg::before{
     content: "";
-    width: 180px;
-    height: 180px;
+    width: 130px;
+    height: 130px;
     background-color: darkturquoise;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: -6px;
+    left: 164px;
+}
+
+@media only screen and (min-width:300px) and (max-width:600px) {
+    .about{
+        flex-direction: column;
+    }
+    .abouttext{
+    /* background-color: aquamarine; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    }
+    .aboutimg{
+    /* background-color:cornflowerblue; */
+    width: 100%;
+    }
 }
 
